@@ -69,6 +69,10 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ### Usuário: Authenticação
 
+`{URL}/v1/user/authenticate`
+'Metodo:' **POST**
+Parametros: email e password
+
 ### Usuário: Cadastro
 
 ### Usuário: Perfil
