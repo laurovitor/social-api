@@ -118,6 +118,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >
 > Metodo: **GET**
 >
+> Parametros: **{id[opcional]}**
+>
 > Retorno: **{user, error, msg}**
 >
 > Mensagens:
@@ -130,6 +132,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >
 > Metodo: **GET**
 >
+> Parametros: **{id}**
+>
 > Retorno: **{friends, error, msg}**
 >
 > Mensagens:
@@ -137,7 +141,7 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >  - Lista de amigos privada.
 
 ### Usuário: Atualizar
-> Link: `{URL}/v1/user/:id`
+> Link: `{URL}/v1/user`
 >
 > Authenticação: **SIM**
 >
