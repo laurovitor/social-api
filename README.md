@@ -75,15 +75,12 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >
 > Parametros: **{email, password}**
 >
-> Retorno: **{token, success, error}**
+> Retorno: **{token, error: msg}**
 >
 > Mensagens:
-> - Sucesso:
->   - Usuario logado com sucesso.
-> - Erro:
->   - Email não cadastrado.
->   - Senha inválida.
->   - Usuário bloqueado.
+> - Email não cadastrado.
+> - Senha inválida.
+> - Usuário bloqueado.
 
 ### Usuário: Cadastro
 
