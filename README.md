@@ -76,6 +76,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ### Usuário: Authenticação
 > Link: `{URL}/v1/user/authenticate`
 >
+> Authenticação: **NÃO**
+>
 > Metodo: **POST**
 >
 > Parametros: **{email, password}**
@@ -89,6 +91,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ### Usuário: Cadastro
 > Link: `{URL}/v1/user/register`
+>
+> Authenticação: **NÃO**
 >
 > Metodo: **POST**
 >
