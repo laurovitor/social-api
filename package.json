@@ -1,0 +1,11 @@
+{
+  "name": "social-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "private": true,
+  "author": {
+    "name": "Lauro Vitor",
+    "email": "laurovitor@gmail.com"
+  }
+}
