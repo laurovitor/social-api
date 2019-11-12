@@ -1,11 +1,25 @@
 {
   "name": "social-api",
   "version": "0.0.1",
-  "description": "",
-  "main": "",
   "private": true,
   "author": {
     "name": "Lauro Vitor",
     "email": "laurovitor@gmail.com"
+  },
+  "scripts": {
+    "start": "node ./bin/start"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-force-https": "^1.0.0",
+    "http-errors": "^1.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "less-middleware": "^3.1.0",
+    "mongoose": "^5.7.10",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
   }
 }
