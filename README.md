@@ -70,8 +70,11 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ### Usuário: Authenticação
 
 > Link: `{URL}/v1/user/authenticate`
+>
 > Metodo: **POST**
+>
 > Parametros: **{email, password}**
+>
 > Retorno: **{token, success, error}**
 >
 > Mensagens:
