@@ -1,6 +1,6 @@
 # Social-API
 
-[![GitHub](https://img.shields.io/github/license/mashape/statusapi.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/laurovitor/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
 ![](https://img.shields.io/github/package-json/v/laurovitor/social-api.svg)
 ![](https://img.shields.io/github/last-commit/laurovitor/social-api.svg?color=red)
 ![](https://img.shields.io/github/languages/top/laurovitor/social-api.svg?color=yellow)
