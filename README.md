@@ -74,24 +74,78 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ## Rotas
 
 ### Usuário: Authenticação
-
 > Link: `{URL}/v1/user/authenticate`
 >
 > Metodo: **POST**
 >
 > Parametros: **{email, password}**
 >
-> Retorno: **{token, error: msg}**
+> Retorno: **{token, error, msg}**
 >
 > Mensagens:
-> - Email não cadastrado.
-> - Senha inválida.
-> - Usuário bloqueado.
+>  - Email não cadastrado.
+>  - Senha inválida.
+>  - Usuário bloqueado.
 
 ### Usuário: Cadastro
+> Link: `{URL}/v1/user/register`
+>
+> Metodo: **POST**
+>
+> Parametros: **{email, password, passwordConfirmation, firstname, birthday}**
+>
+> Retorno: **{token, error, msg}**
+>
+> Mensagens:
+>  - Informe um email válido.
+>  - Email já cadastrado.
+>  - Informe uma senha.
+>  - A senha deve conter no mínimo de 8 caracteres.
+>  - Confirmação de senha está diferente da senha informada.
+>  - Informe um nome.
+>  - Primeiro nome é obrigatório ter no minimo 3 caracteres.
+>  - Informe uma data de nascimento.
+>  - É preciso ter mais de 13 anos para se registrar.
 
 ### Usuário: Perfil
+> Link: `{URL}/v1/user/:id?`
+>
+> Metodo: **GET**
+>
+> Retorno: **{user, error, msg}**
+>
+> Mensagens:
+>  - Usuário não encontrado.
 
 ### Usuário: Amigos
+> Link: `{URL}/v1/user/:id/friends`
+>
+> Metodo: **GET**
+>
+> Retorno: **{friends, error, msg}**
+>
+> Mensagens:
+>  - Usuário não encontrado.
+>  - Lista de amigos privada.
 
 ### Usuário: Atualizar
+> Link: `{URL}/v1/user/:id`
+>
+> Metodo: **PATCH**
+>
+> Parametros: **{firstname, lastname, birthday, photo, nickname, biography, contact:{[phone:{number, public[true/false], validated[true/false]}], [email:{email, public[true,false], validated[true/false]}]}}**
+>
+> Retorno: **{user, error, msg}**
+>
+> Mensagens:
+>  - Usuário não encontrado.
+>  - Informe um nome.
+>  - Primeiro nome é obrigatório ter no minimo 3 caracteres.
+>  - Informe um sobrenome.
+>  - Informe uma data de nascimento.
+>  - É preciso ter mais de 13 anos para se registrar.
+>  - A foto deve conter um tamanho minimo de 300x300px.
+>  - Apelido já esta em uso.
+>  - Dados atualizados com sucesso.
+>  - Foi enviado um email para a validação do endereço informado.
+>  - Foi enviado um SMS para a validação do numero informado.
