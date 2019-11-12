@@ -43,28 +43,24 @@ Clique [aqui](https://github.com/laurovitor/social-api) e siga `Execução de Pr
 ## APIs
 
 - **Rotas**
-  - [Usuário](#usuários)
-    - [Autenticação](#authenticação)
-    - [Cadastro](#cadastro)
-    - [Perfil](#perfil)
-    - [Amigos](#amigos)
-    - [Atualizar](#atualizar)
+  - Usuário
+    - [Autenticação](#usuário:-authenticação)
+    - [Cadastro](#usuário:-cadastro)
+    - [Perfil](#usuário:-perfil)
+    - [Amigos](#usuário:-amigos)
+    - [Atualizar](#usuário:-atualizar)
   - Notas
   - Marcadores
   - Galeria de fotos
   - Arquivo
   - Lixeira
 
-## Usuário
+## Usuário: Authenticação
 
-### Authenticação
+## Usuário: Cadastro
 
-### Cadastro
+## Usuário: Perfil
 
-### Perfil
+## Usuário: Amigos
 
-### Amigos
-
-### Atualizar
-
-## Notas
+## Usuário: Atualizar
