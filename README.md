@@ -1,6 +1,7 @@
 # Social-API
 
-[![GitHub](https://img.shields.io/github/license/mashape/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
+![](https://img.shields.io/github/package-json/v/laurovitor/social-api.svg)
 ![](https://img.shields.io/github/last-commit/laurovitor/social-api.svg?color=red)
 ![](https://img.shields.io/github/languages/top/laurovitor/social-api.svg?color=yellow)
 ![](https://img.shields.io/github/languages/count/laurovitor/social-api.svg?color=lightgrey)
@@ -42,8 +43,8 @@ Clique [aqui](https://github.com/laurovitor/social-api) e siga `Execução de Pr
 ## APIs
 
 - **Rotas**
-  - Usuário
-    - [Autenticação](#authenticacao)
+  - [Usuário](#usuários)
+    - [Autenticação](#authenticação)
     - [Cadastro](#cadastro)
     - [Perfil](#perfil)
     - [Amigos](#amigos)
