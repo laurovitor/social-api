@@ -1,6 +1,6 @@
 # Social-API
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/mashape/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
 [![GitHub](https://img.shields.io/github/license/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
 ![](https://img.shields.io/github/package-json/v/laurovitor/social-api.svg)
 ![](https://img.shields.io/github/last-commit/laurovitor/social-api.svg?color=red)
@@ -31,15 +31,15 @@
 
 ### Configuração do Ambiente
 
-Clique [aqui](https://github.com/laurovitor/social-api) e siga `Configuração de Ambiente`.
+Clique [aqui](#configuração-de-ambiente) e siga `Configuração de Ambiente`.
 
 ### Instalação do Projeto
 
-Clique [aqui](https://github.com/laurovitor/social-api) e siga `Instalação de Projeto`.
+Clique [aqui](#instalação-do-projeto) e siga `Instalação do Projeto`.
 
 ### Execução do Projeto
 
-Clique [aqui](https://github.com/laurovitor/social-api) e siga `Execução de Projeto`.
+Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ## APIs
 
@@ -56,12 +56,24 @@ Clique [aqui](https://github.com/laurovitor/social-api) e siga `Execução de Pr
   - Arquivo
   - Lixeira
 
-## Usuário: Authenticação
+# Documentação
 
-## Usuário: Cadastro
+### Configuração de Ambiente
 
-## Usuário: Perfil
+### Instalação do Projeto
 
-## Usuário: Amigos
+### Execução de Projeto
 
-## Usuário: Atualizar
+## Rotas
+
+### Usuário
+
+#### Usuário: Authenticação
+
+#### Usuário: Cadastro
+
+### Usuário: Perfil
+
+### Usuário: Amigos
+
+### Usuário: Atualizar
