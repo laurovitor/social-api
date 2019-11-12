@@ -70,8 +70,20 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ### Usuário: Authenticação
 
 `{URL}/v1/user/authenticate`
-'Metodo:' **POST**
-Parametros: email e password
+
+Metodo: **POST**
+
+Parametros: **{email, password}**
+
+Retorno: **{token, success, error}**
+
+Mensagens:
+- Sucesso:
+  - Usuario logado com sucesso.
+- Erro:
+  - Email não cadastrado.
+  - Senha inválida.
+  - Usuário bloqueado.
 
 ### Usuário: Cadastro
 
