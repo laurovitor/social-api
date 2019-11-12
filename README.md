@@ -110,6 +110,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ### Usuário: Perfil
 > Link: `{URL}/v1/user/:id?`
 >
+> Authenticação: **SIM**
+>
 > Metodo: **GET**
 >
 > Retorno: **{user, error, msg}**
@@ -119,6 +121,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ### Usuário: Amigos
 > Link: `{URL}/v1/user/:id/friends`
+>
+> Authenticação: **SIM**
 >
 > Metodo: **GET**
 >
@@ -130,6 +134,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ### Usuário: Atualizar
 > Link: `{URL}/v1/user/:id`
+>
+> Authenticação: **SIM**
 >
 > Metodo: **PATCH**
 >
