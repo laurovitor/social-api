@@ -1,7 +1,6 @@
 # Social-API
 
-[![GitHub](https://img.shields.io/github/license/mashape/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
-[![GitHub](https://img.shields.io/github/license/social-api.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/mashape/statusapi.svg)](https://github.com/laurovitor/social-api/blob/master/LICENSE)
 ![](https://img.shields.io/github/package-json/v/laurovitor/social-api.svg)
 ![](https://img.shields.io/github/last-commit/laurovitor/social-api.svg?color=red)
 ![](https://img.shields.io/github/languages/top/laurovitor/social-api.svg?color=yellow)
@@ -27,7 +26,7 @@
 
 - [APIs](#apis)
 
-## Desenvolvimento
+## Instalação e configuração
 
 ### Configuração do Ambiente
 
@@ -58,6 +57,8 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 # Documentação
 
+## Instalação e configuração
+
 ### Configuração de Ambiente
 
 ### Instalação do Projeto
@@ -66,11 +67,9 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 
 ## Rotas
 
-### Usuário
+### Usuário: Authenticação
 
-#### Usuário: Authenticação
-
-#### Usuário: Cadastro
+### Usuário: Cadastro
 
 ### Usuário: Perfil
 
