@@ -1,13 +1,10 @@
 const user = require("./user")();
+const api = require("./api")();
 const middleware = require("./middleware")();
 
 const controller = () => {
-    const getIndex = (req, res, next) => {
-        res.render('index');
-    };
-
     return {
-        getIndex: getIndex,
+        api: api,
         middleware: middleware,
         user: user
     };

@@ -1,21 +1,24 @@
 const { Router } = require('express');
-const v1Route = require("./v1/index");
-const { api } = require("../controllers")();
+const { user, middleware } = require("../../controllers")();
+
+const userRoute = require("./user");
+
 const router = Router();
 
 // ---------------------------------------------------------
 // Rotas Independentes
 // ---------------------------------------------------------
-router.use('/v1', v1Route);
+router.use('/user', userRoute);
 
 // ---------------------------------------------------------
 // Rotas não autenticadas
 // ---------------------------------------------------------
-router.route('/').get(api.get);
+router.route('/authenticate').post(user.authenticate);
 
 // ---------------------------------------------------------
 // Middleware
 // ---------------------------------------------------------
+router.use(middleware.validateToken);
 
 // ---------------------------------------------------------
 // Rotas autenticadas

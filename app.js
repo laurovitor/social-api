@@ -1,11 +1,12 @@
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const hbs = require('express-hbs');
+const secure = require('express-force-https');
 const httpErrors = require('http-errors');
 const lessMiddleware = require('less-middleware');
 const logger = require('morgan');
 const path = require('path');
 const favicon = require('serve-favicon');
-const secure = require('express-force-https');
 
 const indexRouter = require('./routes/index');
 
@@ -13,6 +14,9 @@ const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 // view engine setup
+
+// CONFIGURAR O EXPRESS-HBS
+
 app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(express.json());

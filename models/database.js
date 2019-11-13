@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const db = {
-    username: process.env.DB_USER || "root",
-    password: process.env.DB_PASS || "root",
-    database: process.env.DB_NAME || "challenge",
-    host: process.env.DB_HOST || "127.0.0.1",
-    port: process.env.DB_PORT || "27017",
+    username: process.env.DB_USER || "essenciadebruxa",
+    password: process.env.DB_PASS || "dVtBZ5K2Q2mDeaft",
+    database: process.env.DB_NAME || "essenciadebruxa",
+    host: process.env.DB_HOST || "dbh23.mlab.com",
+    port: process.env.DB_PORT || "27237",
     authSource: process.env.DB_AUTH || "admin"
 }
 
@@ -16,7 +16,7 @@ const options = {
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
-    authSource: db.authSource
+    /*authSource: db.authSource*/
 };
 
 mongoose.connect(uri, options);

@@ -26,6 +26,8 @@
 
 - [APIs](#apis)
 
+- [Documentação](#documentação)
+
 ## Instalação e configuração
 
 ### Configuração do Ambiente
@@ -74,7 +76,7 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 ## Rotas
 
 ### Usuário: Authenticação
-> Link: `{URL}/v1/user/authenticate`
+> Link: `{URL}/v1/authenticate`
 >
 > Authenticação: **NÃO**
 >
@@ -90,7 +92,7 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >  - Usuário bloqueado.
 
 ### Usuário: Cadastro
-> Link: `{URL}/v1/user/register`
+> Link: `{URL}/v1/user`
 >
 > Authenticação: **NÃO**
 >
@@ -112,13 +114,13 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >  - É preciso ter mais de 13 anos para se registrar.
 
 ### Usuário: Perfil
-> Link: `{URL}/v1/user/:id?`
+> Link: `{URL}/v1/user/[nickname]`
 >
 > Authenticação: **SIM**
 >
 > Metodo: **GET**
 >
-> Parametros: **{id[opcional]}**
+> Parametros: **{nickname[Opcional]}**
 >
 > Retorno: **{user, error, msg}**
 >
@@ -126,13 +128,13 @@ Clique [aqui](#execução-do-projeto) e siga `Execução de Projeto`.
 >  - Usuário não encontrado.
 
 ### Usuário: Amigos
-> Link: `{URL}/v1/user/:id/friends`
+> Link: `{URL}/v1/user/[nickname]/friends`
 >
 > Authenticação: **SIM**
 >
 > Metodo: **GET**
 >
-> Parametros: **{id}**
+> Parametros: **{nickname}**
 >
 > Retorno: **{friends, error, msg}**
 >
