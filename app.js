@@ -1,6 +1,6 @@
 const cookieParser = require('cookie-parser');
 const express = require('express');
-const secure = require('express-force-https');
+//const secure = require('express-force-https');
 const httpErrors = require('http-errors');
 const lessMiddleware = require('less-middleware');
 const logger = require('morgan');
@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(secure);
+//app.use(secure);
 
 app.use('/', indexRouter);
 

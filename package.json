@@ -9,7 +9,7 @@
     "email": "laurovitor@gmail.com"
   },
   "scripts": {
-    "start": "node ./bin/start",
+	"start": "node ./bin/start",
     "test": "mocha --recursive"
   },
   "dependencies": {
