@@ -3,11 +3,11 @@ const api = require("./api")();
 const middleware = require("./middleware")();
 
 const controller = () => {
-    return {
-        api: api,
-        middleware: middleware,
-        user: user
-    };
+	return {
+		api: api,
+		middleware: middleware,
+		user: user
+	};
 };
 
 module.exports = controller;

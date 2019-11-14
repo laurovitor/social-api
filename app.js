@@ -1,6 +1,5 @@
 const cookieParser = require('cookie-parser');
 const express = require('express');
-const hbs = require('express-hbs');
 const secure = require('express-force-https');
 const httpErrors = require('http-errors');
 const lessMiddleware = require('less-middleware');
@@ -14,9 +13,6 @@ const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 // view engine setup
-
-// CONFIGURAR O EXPRESS-HBS
-
 app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(express.json());
@@ -31,18 +27,18 @@ app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-  next(httpErrors(404));
+	next(httpErrors(404));
 });
 
 // error handler
 app.use((err, req, res, next) => {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+	// set locals, only providing error in development
+	res.locals.message = err.message;
+	res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+	// render the error page
+	res.status(err.status || 500);
+	res.render('error');
 });
 
 module.exports = app;
