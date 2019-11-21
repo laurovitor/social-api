@@ -24,7 +24,25 @@ const UserSchema = new mongoose.Schema(
 			},
 			nickname: {
 				type: String
-			}
+			},
+			birthday: {
+				type: Date
+			},
+			photo: {
+				type: mongoose.Schema.Types.ObjectId, ref: "Gallery"
+			},
+			biography: {
+				type: String
+			},
+		},
+		contact: {
+			type: [{
+				phone: { type: String },
+				email: { type: String },
+				public: { type: Boolean },
+				validate: { type: Boolean }
+			}],
+			select: false
 		},
 		friends: {
 			type: [{
