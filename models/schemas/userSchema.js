@@ -14,9 +14,25 @@ const UserSchema = new mongoose.Schema(
 			required: true,
 			select: false
 		},
-		name: {
-			type: String,
-			required: true,
+		profile: {
+			firstname: {
+				type: String,
+				required: true,
+			},
+			lastname: {
+				type: String
+			},
+			nickname: {
+				type: String
+			}
+		},
+		friends: {
+			type: [{
+				user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+				status: { type: Number, default: 0 },
+				createdAt: { type: Date, default: Date.now }
+			}],
+			select: false
 		}
 	},
 	{ timestamps: true }
