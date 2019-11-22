@@ -35,15 +35,12 @@ const UserSchema = new mongoose.Schema(
 				type: String
 			},
 		},
-		contact: {
-			type: [{
-				phone: { type: String },
-				email: { type: String },
-				public: { type: Boolean },
-				validate: { type: Boolean }
-			}],
-			select: false
-		},
+		contact: [{
+			phone: { type: String },
+			email: { type: String },
+			public: { type: Boolean, default: true },
+			confirmed: { type: Boolean, default: false }
+		}],
 		friends: {
 			type: [{
 				user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },

@@ -9,21 +9,21 @@
     "email": "laurovitor@gmail.com"
   },
   "scripts": {
-	"start": "node ./bin/start",
+    "start": "node ./bin/start",
     "test": "mocha --recursive"
   },
   "dependencies": {
+    "aws-sdk": "^2.577.0",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-force-https": "^1.0.0",
-    "handlebars": "^4.5.2",
-    "hbs": "^4.0.4",
+    "express-handlebars": "^3.1.0",
     "http-errors": "^1.7.3",
     "jsonwebtoken": "^8.5.1",
     "less-middleware": "^3.1.0",
-    "mongoose": "^5.7.10",
+    "mongoose": "^5.7.12",
     "morgan": "^1.9.1",
     "serve-favicon": "^2.5.0"
   },

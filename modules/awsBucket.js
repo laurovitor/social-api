@@ -1,3 +1,6 @@
+// Documentação
+// https://docs.aws.amazon.com/pt_br/sdk-for-javascript/v2/developer-guide/s3-example-configuring-buckets.html
+
 const AWS = require('aws-sdk');
 
 const credentials = new AWS.SharedIniFileCredentials({
